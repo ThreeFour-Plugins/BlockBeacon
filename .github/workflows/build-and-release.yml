@@ -39,7 +39,7 @@ jobs:
       - name: Generate Release Body
         id: release_body
         run: |
-          cat > release_body.md << EOF
+          cat > release_body.md << 'EOF'
           # BlockBeacon ${{ steps.get_version.outputs.VERSION }}
           
           ## 🚀 New Release
@@ -69,12 +69,12 @@ jobs:
           
           ## 🎮 Commands
           
-          - `/findblock <blocktype|category> [radius]` - Find blocks around you
+          - `/findblock [blocktype or category] [radius]` - Find blocks around you
           - Shift + Right-click on any block to see detailed information
           
           ## 📚 Block Categories
           
-          - `woods`, `ores`, `skulls`, `heads`, `valuable`, `containers`, `utilities`, `redstone`, `colored`, `nether`, `end`, and more!
+          Available categories include: woods, ores, skulls, heads, valuable, containers, utilities, redstone, colored, nether, end, and more!
           
           ## 🔄 Changes in this release
           
