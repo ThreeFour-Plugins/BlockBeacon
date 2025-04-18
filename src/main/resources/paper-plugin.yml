@@ -1,0 +1,11 @@
+name: BlockBeacon
+version: '1.0'
+main: me.threefour.blockbeacon.BlockBeacon
+api-version: '1.21'
+authors: [ Amineos ]
+description: Advanced block finder and inspector that supports all Minecraft blocks. Find specific blocks, view block information, and discover valuable resources in the world.
+    
+permissions:
+  blockbeacon.findblock:
+    description: Allows using the findblock command
+    default: true
